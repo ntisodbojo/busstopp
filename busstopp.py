@@ -15,7 +15,10 @@ def hello_world():
 @app.route('/sites')
 def sitessearch():
 
-    return sites("Södertälje hamn")
+    sitelist = sites(("Sodertalje hamn"))
+
+    return str(sitelist)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
